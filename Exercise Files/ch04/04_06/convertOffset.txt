@@ -1,0 +1,20 @@
+﻿function convertOffset($seconds) {
+    // use absolute value
+    $seconds = abs($seconds);
+    $hour = 60 * 60;
+    // calculate whole hours
+    $hours = floor($seconds / $hour);
+    // if there is a remainder, calculate minutes
+    $remainder = $seconds % $hour;
+    if ($remainder) {
+        $remainder = $remainder / 60 . ' minutes';
+    } else {
+        $remainder = '';
+    }
+    if ($hours == 1) {
+        $h = 'hour';
+    } else {
+        $h = 'hours';
+    }
+    return "$hours $h $remainder";
+}

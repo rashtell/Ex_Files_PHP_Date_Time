@@ -1,0 +1,10 @@
+if ($diff === 0) {
+    echo "$id1 and $id2 are in the same time zone.";
+} else {
+    if ($diff > 0) {
+        $direction = 'ahead of';
+    } else {
+        $direction = 'behind';
+    }
+    echo "$id1 is " . convertOffset($diff) . " $direction $id2.";
+}

@@ -1,0 +1,5 @@
+﻿echo '<p>America declared independence at ' . $independence->format($format) . '.</p>';
+echo '<p>The French Revolution began at ' . $bastille->format($format) . '.</p>';
+echo '<p>Time marches on: ' . $future->format($format) . '.</p>';
+echo '<p>In 3 weeks, 2 days it will be : ' . $relative->format($format) . '.</p>';
+echo '<p>The last Tuesday of December 2015 will be : ' . $lastTuesday->format($format) . '.</p>';

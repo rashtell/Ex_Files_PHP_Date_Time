@@ -1,0 +1,2 @@
+echo '<br>';
+echo $india->getTimestamp() - $ny->getTimestamp();

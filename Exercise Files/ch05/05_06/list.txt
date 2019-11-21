@@ -1,0 +1,5 @@
+echo '<ol>';
+foreach ($period as $p) {
+    echo '<li>' . $p->format('l, F j, Y') . '</li>';
+}
+echo '</ol>';
